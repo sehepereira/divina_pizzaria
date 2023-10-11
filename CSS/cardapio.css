@@ -1,0 +1,399 @@
+body {
+    background-color: rgba(230, 223, 221, 0.959);
+}
+
+.cabecalho {
+    background-color: #F8F0E8;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    position: relative;
+}
+
+.cabecalho__logo__pizzadivina {
+    bottom: 65px;
+    width: 30vh;
+    height: 25vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo__forno {
+    width: 50px;
+}
+
+.lista__menu {
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    width: 25vw;
+    top: 100%;
+}
+
+.container__botao:checked~.lista__menu {
+    display: block;
+    padding: 0px 9px;
+}
+
+.lista__menu__informacoes, .lista__menu__item {
+    padding: 1em;
+    background: #F8F0E8;
+}
+
+.lista__menu__link {
+    color: black;
+    cursor: pointer;
+    font-family: "inter";
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+
+.lista__menu__link:hover {
+    color: #d31608;
+}
+
+.container__botao {
+    display: none;
+}
+
+.cabecalho__menu__hamburguer {
+    background-image: url("../IMG/menu-hamburguer.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0px 15px;
+}
+
+.container__carrinho {
+    align-items: center;
+    display: flex;
+    margin: 0px 25px;
+    text-transform: uppercase;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista__menu__login {
+    color: black;
+    font-family: "inter";
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.lista__menu__login:hover {
+    color: #d31608;
+}
+
+.imagem__carrinho {
+    height: 25px;
+    width: 25px;
+}
+
+.lista__menu__carrinho {
+    color: black;
+    font-family: "inter";
+    font-weight: 500;
+    text-decoration: none;   
+}
+
+.lista__menu__carrinho:hover {
+    color: #d31608;
+}
+
+main {
+    background: #F8F0E8;
+}
+
+h1 {
+    color: #976561;
+    font-family: "martel";
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.texto__pizzas {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.texto__salgadas {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__doces {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+
+.texto__calzones {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.texto__calzone__sagados {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__calzone__doces {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__esfihas {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.texto__esfihas__salgadas {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__esfihas__doces {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__bebidas {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.texto__sucos {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.texto__refrigerantes {
+    color: #976561;
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.container__imagens {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+}
+
+.container__pizza {
+    background: #AAA29233;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    width: 220px;
+    height: 430px;
+}
+
+.container__calzones {
+    background: #AAA29233;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    width: 220px;
+    height: 430px;
+}
+
+.container__esfihas {
+    background: #AAA29233;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    width: 220px;
+    height: 430px;
+}
+
+.container__bebidas {
+    background: #AAA29233;
+    border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    width: 220px;
+    height: 430px;
+}
+
+.container__funcionamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: #90312ACC;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase; 
+    height: 138px;
+}
+
+.cabecalho__funcionamento__texto {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    right: 45%;
+}
+
+.menu__container__funcionamento {
+    position: relative;
+    right: 46%;
+}
+
+.cabecalho__dias {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.rodape__localizacao {
+    bottom: 32px;
+    color: white;
+    width: 17%;
+    left: 40%;
+    position: relative;
+}
+
+.link__rodape {
+    color: white;
+}
+
+.talento__cloud {
+    color: black;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+@media screen and (min-width: 980px) { 
+    .cabecalho {
+        padding: 1.75rem 1.5rem;
+    }
+    
+    .cabecalho__menu__hamburguer {
+        display: none;
+    }
+
+    .lista__menu {
+        display: none;
+        display: flex;
+        padding: 0.75rem 0.9375rem;
+        position: relative;
+        top: auto;
+    }
+
+    .container__botao:checked~.lista__menu {
+        display: flex;
+    }
+}
+
+    /* .container__funcionamento { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background: #90312ACC;
+        font-family: "inter";
+        font-weight: 400;
+        font-size: 12px;
+        padding: 0.75rem 1.5rem;
+        text-transform: uppercase; 
+    }
+
+    .cabecalho__funcionamento__texto {
+        font-size: 14px;
+        font-weight: 700;
+        position: relative;
+        right: 45%;
+    }
+
+    .menu__container__funcionamento {
+        position: relative;
+        right: 46%;
+    }
+
+    .cabecalho__dias {
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+
+    .rodape__localizacao {
+        bottom: 32px;
+        color: white;
+        width: 17%;
+        left: 40%;
+        position: relative;
+    }
+
+    .link__rodape {
+        color: white;
+    }
+
+    .talento__cloud {
+        text-align: center;
+        display: flex;
+       
+        position: relative;
+        
+    }
+}/*  
