@@ -10,13 +10,20 @@ body {
     position: relative;
 }
 
-.cabecalho__logo {
-    display: none;
-} 
+.cabecalho__logo__pizzadivina {
+    bottom: 65px;
+    width: 30vh;
+    height: 25vh;
+    position: relative;
+}
 
 .container {
     display: flex;
     align-items: center;
+}
+
+.logo__forno {
+    width: 50px;
 }
 
 .lista__menu {
@@ -37,18 +44,11 @@ body {
     background: #F8F0E8;
 }
 
-.lista__menu__informacoes {
-    color: #d31608;
-    font-family: "inter";
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
 .lista__menu__link {
     color: black;
     cursor: pointer;
     font-family: "inter";
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none; 
 }
 
@@ -73,6 +73,7 @@ body {
     align-items: center;
     display: flex;
     margin: 0px 25px;
+    
 }
 
 .login {
@@ -87,6 +88,7 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
+
 .lista__menu__login:hover {
     color: #d31608;
 }
@@ -107,73 +109,100 @@ body {
     color: #d31608;
 }
 
-.container__historia {
-    color: darkgrey;
+main {
     background: #F8F0E8;
-    font-family: "inter";
+    height: 480px;
+}
+
+h1 {
+    color: #976561;
+    font-family: "martel";
     font-weight: 700;
+    font-size: 36px;
     padding: 1.75rem 1.5rem;
-    text-transform: uppercase;
-}
-
-.menu__container__historia {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.imagem__pizzaiolo {
-    align-self: center;
-    width: 185px;
-    height: 135px;
+    position: relative;
+    text-align: center; 
 }
 
 .container__texto {
-    color: grey;
-    border: 2px solid;
-    border-radius: 10px;
+    color: #976561;
+    display: flex;
     font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    padding: 2.75rem 1.5rem;
-    text-transform: uppercase;
-    gap: 10px;
+    font-weight: 700;
+    justify-content: space-evenly; 
+}
+
+.container__promocoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 20px;
+}
+
+.container__compre__ganhe {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
-.historia__cabecalho__texto {
-    color: #90312ACC;
-    font-family: "martel";
-    font-weight: 400;
-    font-size: 22px;
-}
-
-strong {
-    color: darkslategray;
-    font-weight: 700;
-}
-
-h3 {
-    color: #90312ACC;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.container__localizacao {
-    color: grey;
-    background: #F8F0E8;
-    font-family: "inter";
-    font-weight: 700;
-    padding: 2.75rem 1.5rem;
-    text-transform: uppercase;
-}
-
-.menu__container__localizacao {
+.container__combo {
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #976561;
+    width: 446px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    height: 116px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container__combo__texto {
+    color: #976561;
+    font-family: "martel";
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+.img__promocao {
+    width: 50px;
+}
+
+.container__fidelidade__texto {
+    color: #976561;
+    font-family: "martel";
+    font-weight: 500;
+    font-size: 36px;
+
+}
+
+.img__fidelidade {
+    width: 50px;
+}
+
+.container__combo__fidelidade {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container__fidelidade {
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #976561;
+    width: 446px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 116px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container__pontos__texto {
+    position: relative;
+    top: 50px;
 }
 
 .container__funcionamento {
@@ -186,13 +215,20 @@ h3 {
     font-weight: 400;
     font-size: 12px;
     padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     height: 141px;
 }
 
 .cabecalho__funcionamento__texto {
     font-size: 14px;
     font-weight: 700;
+    position: relative;
+    right: 45%;
+}
+
+.menu__container__funcionamento {
+    position: relative;
+    right: 46%;
 }
 
 .cabecalho__dias {
@@ -202,11 +238,11 @@ h3 {
 }
 
 .rodape__localizacao {
-    margin-top: 10px;
-}
-
-.logo__frame {
-    margin-top: 10px;
+    bottom: 32px;
+    color: white;
+    width: 17%;
+    left: 40%;
+    position: relative;
 }
 
 .link__rodape {
@@ -214,27 +250,19 @@ h3 {
 }
 
 .talento__cloud {
-    text-align: center;
-    color:black;
+    color: black;
     font-weight: 500;
-    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    position: relative;
 }
 
-@media screen and (min-width: 980px) {
-  
+
+@media screen and (min-width: 980px) { 
     .cabecalho {
         padding: 1.75rem 1.5rem;
     }
-
-    .cabecalho__logo {
-        display: inline-block; 
-        width: 25vh;
-        height: 25vh;
-        bottom: 50px;
-        position: relative;
     
-    } 
-
     .cabecalho__menu__hamburguer {
         display: none;
     }
@@ -250,50 +278,4 @@ h3 {
     .container__botao:checked~.lista__menu {
         display: flex;
     }
-
-    .menu__container__historia {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .imagem__pizzaiolo {
-        width: 25%;
-        height: 25%;
-    }
-
-    .cabecalho__funcionamento__texto {
-        position: relative;
-        right: 45%;
-    }
-
-    .menu__container__funcionamento {
-        position: relative;
-        right: 46%;
-    }
-
-    .rodape__localizacao {
-        bottom: 42px;
-        color: white;
-        width: 17%;
-        left: 40%;
-        position: relative;
-    }
-
-    .link__rodape {
-        color: white;
-    }
-
-    .talento__cloud {
-        text-align: center;
-        display: flex;
-        position: relative;
-    }
 }
-    
-
-
-
-
-    
