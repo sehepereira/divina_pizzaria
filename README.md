@@ -2,7 +2,7 @@
 
 # Sobre
 
-Desenvolvendo site de uma Pizzaria. 🍕
+Desenvolvendo site de uma Pizzaria.🍕
 
 ![Alt text](<IMG/Pizzaria Divina - Google Chrome 12_10_2023 23_11_12.png>)
 
@@ -15,6 +15,9 @@ Desenvolvendo site de uma Pizzaria. 🍕
 
 # Autores
 . Dart Wamberto
+
 . Sergio Henrique Pereira
+
 . Gilberto Sabino
+
 . Sergio Henrique Zanucci
