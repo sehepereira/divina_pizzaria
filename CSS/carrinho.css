@@ -1,40 +1,28 @@
-.login__infoextras {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-
-.login__infoextras > div {
-    font-size: 20px;
-    padding: 5px 20px;
-}
-
-.login__interacao {
+.carrinho__interacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-.login__interacao > div {
+.carrinho__interacao > div {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
 }
   
-.login__interacao > div:first-child {
+.carrinho__interacao > div:first-child {
     text-align: left;
 }
   
-.login__interacao > div:last-child {
+.carrinho__interacao > div:last-child {
     text-align: right;
 }
 
-.login__titulo{
+.carrinho__titulo{
     text-align: center;
     gap: 10px;
 }
 
-.login__dados{
+.carrinho__dados{
     color: black;
     display: flex;
     gap: 10px;
@@ -42,17 +30,18 @@
     padding: 10px;
 }
 
-.login__interacao__link {
+.carrinho__interacao__link {
     color: black;
     font-family: "inter";
     font-weight: 500;
+    text-transform: uppercase;
 }
 
-.login__interacao__link:hover {
+.carrinho__interacao__link:hover {
     color: #d31608;
 }
 
-.lista__menu__link {
+.carrinho__menu__link {
     color: black;
     cursor: pointer;
     font-family: "inter";
@@ -60,7 +49,7 @@
     text-decoration: none; 
 }
 
-.lista__menu__link:hover {
+.carrinho__menu__link:hover {
     color: #d31608;
 }
 
@@ -83,19 +72,19 @@
     margin: 0px 25px;
 }
 
-.login {
+.carrinho {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.lista__menu__login {
+.lista__menu__carrinho {
     color: black;
     font-family: "inter";
     font-weight: 500;
     text-decoration: none;
 }
-.lista__menu__login:hover {
+.lista__menu__carrinho:hover {
     color: #d31608;
 }
 
@@ -128,6 +117,12 @@
     gap: 8px 8px;
 }
 
+.titulo__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
 .menu__container__mensagem {
     display: flex;
     flex-direction: column;
@@ -140,9 +135,9 @@
     height: 135px;
 }
 
-.imagem__mensagem {
+.imagem__carrinho_titulo {
     align-self: center;
-    width: 375px;
+    width: 75px;
 }
 
 .imagem__container__login {
@@ -176,6 +171,7 @@
     font-size: 12px;
     padding: 20px;
     box-sizing: border-box;
+    text-transform: uppercase;
     gap: 10px;
     display: flex;
     flex-direction: row;
@@ -194,12 +190,39 @@
 .login__texto {
     color: #F8F0E8;
     font-family: "martel";
-    font-weight: 400;
+    font-weight: 300;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    padding: 0px;
+    padding: 0px 10px;
     margin: 0px;
+    width: 80px;
+}
+
+#linha-horizontal {
+    border: 1px solid #000;
+}
+
+.login__subtitulo {
+    color: #90312ACC;
+    font-family: "martel";
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 70px;
+    margin: 0px;
+}
+
+.login__itens{
+    color: #90312ACC;
+    font-family: "martel";
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    width: 150px;
 }
 
 .login_placeholder {
@@ -212,6 +235,7 @@
     font-size: 12px;
     padding: 20px;
     box-sizing: border-box;
+    text-transform: uppercase;
     gap: 10px;
     flex-direction: row;
     flex-grow: 1;
@@ -236,6 +260,7 @@ h3 {
     font-family: "inter";
     font-weight: 700;
     padding: 2.75rem 1.5rem;
+    text-transform: uppercase;
 }
 
 .menu__container__localizacao {
@@ -255,6 +280,7 @@ h3 {
     font-weight: 400;
     font-size: 12px;
     padding: 0.75rem 1.5rem;
+    text-transform: uppercase; 
 }
 
 .cabecalho__funcionamento__texto {
@@ -310,7 +336,7 @@ h3 {
 @media screen and (min-width: 980px) {
   
     .cabecalho {
-        padding: 1.75rem 1.5rem;
+        padding: 3.75rem 1.5rem;
     }
     .cabecalho__menu__hamburguer {
         display: none;
