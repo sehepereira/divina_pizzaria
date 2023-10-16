@@ -141,7 +141,7 @@
 }
 
 .container__texto {
-    background-color: #CCC4BC;
+    background-color: #CCC4BCCC;
     color: grey;
     border: 2px solid;
     border-radius: 10px;
@@ -193,7 +193,7 @@
 }
 
 .login_placeholder {
-    background-color: #F8F0E8;
+    background-color: #D9D9D9;
     color: grey;
     border: 2px solid;
     border-radius: 10px;
@@ -268,19 +268,6 @@ h3 {
     position: relative;
 }
 
-/* .container__tabela__horario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-} */
-
-/* .cabecalho__horarios {
-    display: flex;
-    justify-content: space-between;
-    gap: 35px;
-} */
-
 .rodape__localizacao {
     margin-top: 10px;
 }
@@ -321,21 +308,38 @@ h3 {
         display: flex;
     }
 
+    .container__historia {
+        display: flex;
+        justify-content: center;
+    }
+
+
     .menu__container__historia {
         display: flex;
         align-items: center;
         flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .imagem__pizzaiolo {
-        width: 25%;
-        height: 25%;
+        gap: 80px;
+        width: 100%;
     }
 
     .cabecalho__funcionamento__texto {
+        /* width: 100%; */
         position: relative;
         right: 45%;
+    }
+
+    .container__texto {
+        display: flex;
+        align-items: center;
+        height: 494px;
+        width: 650px;
+        
+    }
+
+    .login__dados {
+        width: 406px;
+        display: flex;
+        align-items: center;
     }
 
     .menu__container__funcionamento {
