@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../IMG/divina-pizzaria.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/cardapio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap" rel="stylesheet">
     <title>Pizzaria Divina</title>
-</head>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap" rel="stylesheet">
+</head> 
 <body>
     <header class="cabecalho">
+<<<<<<< HEAD
         <img class="cabecalho__logo__pizzadivina" src="../IMG/logo 1.png" alt="Logo divina pizzaria">  
+=======
+        <img class="cabecalho__logo__pizzadivina" src="../IMG/logo 1.png" alt="">        
+>>>>>>> 7fba35a67cf5388c6482b8e2b7e64d7c66da094e
         <div class="container"> 
             <nav class="container__lista__navegacao">
                 <input type="checkbox" id="menu" class="container__botao">
@@ -21,7 +29,7 @@
                 <ul class="lista__menu">
                     <li class="lista__menu__informacoes"></li>
                     <li class="lista__menu__item">
-                        <a href="index.html" class="lista__menu__link">Inicio</a>
+                        <a href="../HTML/index.html" class="lista__menu__link">Inicio</a>
                     </li>
                     <li class="lista__menu__item">
                         <a href="../HTML/cardapio.html" class="lista__menu__link">Cardápio</a>
@@ -37,7 +45,7 @@
                 <ul class="login">
                     <img class="imagem__login" src="../IMG/img-login.png" alt="Logo-login">
                     <li class="lista__menu__login">
-                        <a class="lista__menu__login" href="../HTML/login.html">Login</a>
+                        <a href="../HTML/login.html" class="lista__menu__login">Login</a>
                     </li>
                     <img class="imagem__carrinho" src="../IMG/carrinho.png" alt="Imagem carrinho">
                     <li class="lista__menu__carrinho">
@@ -48,39 +56,71 @@
         </div>
     </header>
     <main>
-        <h1>Cardápio</h1>
-        <div>
-            <section class="container__imagens">
-                <div class="container__pizza">
-                    <p class="texto__pizzas">Pizzas</p>
-                    <img src="../IMG/img-pizza.png" alt="Imagem pizza salgada">
-                    <p class="texto__salgadas">Salgadas</p>
-                    <img src="../IMG/img-pizza-doce.png" alt="Imagem pizza doce">
-                    <p class="texto__doces">Doces</p>
+        <section class="container__historia">
+            <div class="menu__container__historia">
+                <div class="container__texto">
+                    <div class="login__interacao">
+                        <img class="imagem__carrinho_titulo" src="../IMG/forno-a-lenha - titulo.png" alt="Logo-pizza">
+                        <div class="titulo__container">
+                            <img class="login__texto" src="../IMG/carrinho.png" alt="Logo-pizza">
+                            <h4 class="login__texto">Carrinho</h4>
+                        </div>
+                        <img class="imagem__carrinho_titulo" src="../IMG/forno-a-lenha - titulo.png" alt="Logo-pizza">
+                    </div>
+                    <div class="login__interacao">
+                        <h3 class="login__subtitulo">Descrição</h3>
+                        <h3 class="login__subtitulo">QTD</h3>
+                        <h3 class="login__subtitulo">Preço</h3>
+                        <h3 class="login__subtitulo">SubTotal</h3>
+                        <h3 class="login__subtitulo">x</h3>
+                    </div>
+                    <div id="linha-horizontal"></div>
+                    <div class="login__interacao">
+                        <div class="titulo__container">
+                            <img class="login__texto" src="../IMG/img-pizza.png" alt="Logo-pizza">
+                            <h3 class="login__itens">Marguerita</h3>
+                        </div>
+                        <h3 class="login__subtitulo">1</h3>
+                        <h3 class="login__subtitulo">R$ 49,99</h3>
+                        <h3 class="login__subtitulo">R$ 49,99</h3>
+                        <h3 class="login__subtitulo">X</h3>
+                    </div>
+                    <div class="login__interacao">
+                        <div class="titulo__container">
+                            <img class="login__texto" src="../IMG/img-pizza-doce.png" alt="Logo-pizza">
+                            <h3 class="login__itens">Brigadeiro  </h3>
+                        </div>
+                        <h3 class="login__subtitulo">1</h3>
+                        <h3 class="login__subtitulo">R$ 55,99</h3>
+                        <h3 class="login__subtitulo">R$ 55,99</h3>
+                        <h3 class="login__subtitulo">X</h3>
+                    </div>
+                    <div class="login__interacao">
+                        <div class="titulo__container">
+                            <img class="login__texto" src="../IMG/img-refri.png" alt="Logo-pizza">
+                            <h3 class="login__itens">Coca Cola Lata  </h3>
+                        </div>
+                        <h3 class="login__subtitulo">3</h3>
+                        <h3 class="login__subtitulo">R$ 6,99</h3>
+                        <h3 class="login__subtitulo">R$ 20,97</h3>
+                        <h3 class="login__subtitulo">X</h3>
+                    </div>
+                    <div id="linha-horizontal"></div>                      
+                    <div class="login__infoextras">
+                        <div>Opções de Frete</div>
+                        <div>Valores</div>
+                    </div>
+                    <div class="login__infoextras">
+                        <div>Retirada</div>
+                        <div>Entrega</div>
+                    </div>
+                    <div class="login__infoextras">
+                        <div>Frete</div>
+                        <div>Total</div>
+                    </div>
                 </div>
-                <div class="container__calzones">
-                    <p class="texto__calzones">Calzones</p>
-                    <img src="../IMG/calzones-salgado.png" alt="Imagem calzone salgado">
-                    <p class="texto__calzone__sagados">Salgados</p>
-                    <img src="../IMG/calzones-doces.png" alt="Imagem calzone doce">
-                    <p class="texto__calzone__doces">Doces</p>
-                </div>
-                <div class="container__esfihas">
-                    <p class="texto__esfihas">Esfihas</p>
-                    <img src="../IMG/esfihas-salgadas.png" alt="Imagem esfiha salgada">
-                    <p class="texto__esfihas__salgadas">Salgadas</p>
-                    <img src="../IMG/esfiha-doce.png" alt="Imagem esfiha doce">
-                    <p class="texto__esfihas__doces">Doces</p>
-                </div>
-                <div class="container__bebidas">
-                    <p class="texto__bebidas">Bebidas</p>
-                    <img src="../IMG/img-sucos.png" alt="Imagem suco">
-                    <p class="texto__sucos">Sucos</p>
-                    <img src="../IMG/img-refri.png" alt="Imagem refrigerante">
-                    <p class="texto__refrigerantes">Refrigerantes</p>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="container__funcionamento">
