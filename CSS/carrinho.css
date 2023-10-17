@@ -301,19 +301,6 @@ h3 {
     position: relative;
 }
 
-/* .container__tabela__horario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-} */
-
-/* .cabecalho__horarios {
-    display: flex;
-    justify-content: space-between;
-    gap: 35px;
-} */
-
 .rodape__localizacao {
     margin-top: 10px;
 }
@@ -335,9 +322,10 @@ h3 {
 
 @media screen and (min-width: 980px) {
   
-    .cabecalho {
+    /* .cabecalho {
         padding: 3.75rem 1.5rem;
-    }
+    } */
+
     .cabecalho__menu__hamburguer {
         display: none;
     }

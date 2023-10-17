@@ -9,19 +9,19 @@ Desenvolvendo site de uma Pizzaria.
 
 # Tecnologia
 
-. IDE VisualStudio Code
+- IDE VisualStudio Code
 
-. HTML
+- HTML
 
-. CSS
+- CSS
 
-. Git e Github
+- Git e Github
 
 # Autores
-. Dart Wamberto
+- Dart Wamberto
 
-. Sergio Henrique Pereira
+- Sergio Henrique Pereira
 
-. Gilberto Sabino
+- Gilberto Sabino
 
-. Sergio Henrique Zanucci
+- Sergio Henrique Zanucci
