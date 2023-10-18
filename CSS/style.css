@@ -1,9 +1,5 @@
-body {
-    background-color: rgba(230, 223, 221, 0.959);
-}
-
 .cabecalho {
-    background-color: #F8F0E8;
+    background:#F8F0E8;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -34,7 +30,7 @@ body {
 
 .lista__menu__informacoes, .lista__menu__item {
     padding: 1em;
-    background: #F8F0E8;
+    background:#F8F0E8;
 }
 
 .lista__menu__informacoes {
@@ -105,6 +101,21 @@ body {
 
 .lista__menu__carrinho:hover {
     color: #d31608;
+}
+
+.video {
+    background-color: #F8F0E8;
+    opacity: 0.8;
+    padding: 0.75rem 1.5rem;
+    transition: 400ms;
+}
+
+.video:hover {
+    opacity: 1;
+} 
+
+iframe {
+    box-shadow: 10px 10px black;
 }
 
 .container__historia {
