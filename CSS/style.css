@@ -114,7 +114,7 @@
     opacity: 1;
 } 
 
-iframe {
+.iframe__video {
     box-shadow: 10px 10px black;
 }
 
@@ -240,7 +240,7 @@ h3 {
     .cabecalho__logo {
         display: inline-block; 
         width: 25vh;
-        height: 25vh;
+        height: 20vh;
         bottom: 50px;
         position: relative;
     
