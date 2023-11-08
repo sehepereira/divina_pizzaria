@@ -2,7 +2,7 @@
     background:#F8F0E8;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
     position: relative;
 }
 
@@ -21,6 +21,15 @@
     position: absolute;
     width: 25vw;
     top: 100%;
+}
+
+.container__historia__texto {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 .container__botao:checked~.lista__menu {
@@ -115,6 +124,7 @@
 } 
 
 .iframe__video {
+    margin: 30px 0px;
     box-shadow: 10px 10px black;
 }
 
@@ -229,6 +239,13 @@ h3 {
     color:black;
     font-weight: 500;
     margin-top: 10px;
+}
+
+.cabecalho__logo__pizzadivina {
+    bottom: 65px;
+    width: 30vh;
+    height: 25vh;
+    position: relative;
 }
 
 @media screen and (min-width: 980px) {
