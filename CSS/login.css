@@ -1,25 +1,8 @@
-.login__infoextras {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-
-.login__infoextras > div {
-    font-size: 20px;
-    padding: 5px 20px;
-}
-
 .login__interacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-.login__interacao > div {
-    font-size: 20px;
-    padding: 5px;
-}
   
 .login__interacao > div:first-child {
     text-align: left;
@@ -46,6 +29,7 @@
     color: black;
     font-family: "inter";
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .login__interacao__link:hover {
@@ -61,6 +45,20 @@
 }
 
 .lista__menu__link:hover {
+    color: #d31608;
+}
+
+.lista__login__link {
+    color: black;
+    cursor: pointer;
+    font-family: "inter";
+    font-weight: 400;
+    text-decoration: none; 
+    font-size: 20px;
+    padding: 10px;
+}
+
+.lista__login__link:hover {
     color: #d31608;
 }
 
@@ -152,7 +150,7 @@
 }
 
 .container__texto {
-    background-color: #CCC4BCCC;
+    background-color: #CCC4BC;
     color: grey;
     border: 2px solid;
     border-radius: 10px;
@@ -176,6 +174,7 @@
     font-size: 12px;
     padding: 20px;
     box-sizing: border-box;
+    text-transform: uppercase;
     gap: 10px;
     display: flex;
     flex-direction: row;
@@ -203,7 +202,7 @@
 }
 
 .login_placeholder {
-    background-color: #D9D9D9;
+    background-color: #F8F0E8;
     color: grey;
     border: 2px solid;
     border-radius: 10px;
@@ -212,6 +211,7 @@
     font-size: 12px;
     padding: 20px;
     box-sizing: border-box;
+    text-transform: uppercase;
     gap: 10px;
     flex-direction: row;
     flex-grow: 1;
@@ -236,6 +236,7 @@ h3 {
     font-family: "inter";
     font-weight: 700;
     padding: 2.75rem 1.5rem;
+    text-transform: uppercase;
 }
 
 .menu__container__localizacao {
@@ -255,6 +256,7 @@ h3 {
     font-weight: 400;
     font-size: 12px;
     padding: 0.75rem 1.5rem;
+    text-transform: uppercase; 
 }
 
 .cabecalho__funcionamento__texto {
@@ -274,6 +276,19 @@ h3 {
     height: 25vh;
     position: relative;
 }
+
+/* .container__tabela__horario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+} */
+
+/* .cabecalho__horarios {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+} */
 
 .rodape__localizacao {
     margin-top: 10px;
@@ -315,38 +330,21 @@ h3 {
         display: flex;
     }
 
-    .container__historia {
-        display: flex;
-        justify-content: center;
-    }
-
-
     .menu__container__historia {
         display: flex;
         align-items: center;
         flex-direction: row;
-        gap: 80px;
-        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .imagem__pizzaiolo {
+        width: 25%;
+        height: 25%;
     }
 
     .cabecalho__funcionamento__texto {
-        /* width: 100%; */
         position: relative;
         right: 45%;
-    }
-
-    .container__texto {
-        display: flex;
-        align-items: center;
-        height: 494px;
-        width: 650px;
-        
-    }
-
-    .login__dados {
-        width: 406px;
-        display: flex;
-        align-items: center;
     }
 
     .menu__container__funcionamento {
@@ -373,9 +371,3 @@ h3 {
         
     }
 }
-    
-
-
-
-
-    
