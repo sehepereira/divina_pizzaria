@@ -17,12 +17,20 @@
     gap: 10px;
 }
 
+.login__imagem{
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
 .login__dados{
     color: black;
     display: flex;
     gap: 10px;
     font-size: 20px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .login__interacao__link {
@@ -149,6 +157,25 @@
     height: 36px;
 }
 
+.termo__uso{
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 60px;
+    height: 25px;
+  }
+
+.imagem__container__cadastro {
+    align-self: center;
+    width: 60px;
+    height: 60px;
+}
+
 .container__texto {
     background-color: #CCC4BC;
     color: grey;
@@ -199,6 +226,17 @@
     text-align: center;
     padding: 0px;
     margin: 0px;
+}
+
+.login__texto__descricao {
+    color: #F8F0E8;
+    font-family: "martel";
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+    margin: 10px;
 }
 
 .login_placeholder {
