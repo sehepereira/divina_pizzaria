@@ -99,9 +99,11 @@ main {
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 15px black;
-  width: 950px;
-  height: 2250px;
+  /*width: 950px;  */
+  height: 2550px;
   padding: 10px;
+  min-width: 280px;
+  max-width: 997px;
   margin: auto;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
@@ -111,7 +113,12 @@ h1 {
   color: rgb(228, 55, 11);
   text-align: center;
   text-shadow: 1px 1px 2px black;
+
   font-family: "Libre Franklin", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Tangerine", cursive;
+
+  font-size: 3.5rem; /* Tamanho da fonte */
 }
 
 .cabecalho_h {
@@ -126,4 +133,18 @@ h2 {
   color: rgb(228, 48, 20);
   text-align: center;
   text-shadow: 1px 1px 2px black;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+
+  font-size: 1.5rem; /* Tamanho da fonte */
+
+  font-family: "Ribeye Marrow", serif;
+}
+
+Link_teste {
+  @import url("https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap");
 }

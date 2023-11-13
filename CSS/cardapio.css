@@ -1,5 +1,8 @@
 body {
     background-color: rgba(230, 223, 221, 0.959);
+    min-width: 280px;
+    max-width: 997px;
+    margin: auto;
 }
 
 .cabecalho {
@@ -110,6 +113,11 @@ body {
 
 main {
     background: #F8F0E8;
+
+    min-width: 376px;
+    max-width: 997px;
+
+    margin: auto;
 }
 
 h1 {
@@ -336,6 +344,7 @@ h1 {
         padding: 0.75rem 0.9375rem;
         position: relative;
         top: auto;
+        margin: auto;
     }
 
     .container__botao:checked~.lista__menu {
