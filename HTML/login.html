@@ -23,22 +23,28 @@
                 </div>
                 <div class="container__texto">
                     <h4 class="login__texto">Login</h4>
-                    <li class="login__dados">
+					<form id="form-login" >
+					<div class="login__dados">
                         <img class="imagem__container__login" src="../IMG/usuario-login.png" alt="Logo-pizza">
-                        <p class="container__login"><input class="login_placeholder" placeholder="Email"></p>
-                    </li>
-                    <li class="login__dados">
+                        <p class="container__login"><input id="email" name="email" type="email" class="login_placeholder" placeholder="Email"></p>
+					</div>
+					<div class="login__dados">
                         <img class="imagem__container__login" src="../IMG/usuario-senha.png" alt="Logo-pizza">
-                        <p class="container__login"><input type="senha" class="login_placeholder" placeholder="senha"></p>
-                    </li>
+                        <p class="container__login"><input id="senha" name="senha" type="senha" class="login_placeholder" placeholder="senha"></p>
+					</div>
+					<button id="login" class="botaoCentralizado">Acessar Conta</button>
+					</form>
+					<ul id="mensagens-erro"></ul>
                     <div class="login__interacao">
-                        <a href="../HTML/cadastro.html" class="lista__login__link">Cadastre-se</a>
+                        <a href="../HTML/cadastro.html"  class="lista__login__link">Cadastre-se</a>
+
                         <a href="../HTML/recuperacao.html" class="lista__login__link">Esqueci a senha</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+	<script src="../JAVASCRIPT/form.js" ></script> <!-- chama os arquivos em javascript-->
 	<script src="../JAVASCRIPT/footer.js"></script>
 </body>
 </html>
