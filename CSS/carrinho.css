@@ -279,6 +279,23 @@ button {
     top: 75px;
 }
 
+dialog::backdrop{
+	background-color: rgb(0 0 0 / .3)
+}
+
+dialog {
+	border-radius: .5rem;
+	box-shadow: 0 0 1em rgb(0 0 0 / .3);
+	width: 40%;
+	justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 @media screen and (max-width: 760px) {
     .container__footer {
         display: block;
