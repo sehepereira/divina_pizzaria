@@ -1,7 +1,6 @@
-const footer = document.createElement('footer');
+const footer = document.createElement("footer");
 
-footer.innerHTML = 
-`
+footer.innerHTML = `
     <footer>
       <section class="container__footer">
         <ul class="container__lista__horario__dia">
@@ -19,9 +18,18 @@ footer.innerHTML =
         </ul> 
         <ul class="lista__redes__sociais">
           <li class="rede__social__texto">Siga-nos em nossas redes sociais</li><br>
-          <img class="rede__social" src="/IMG/icon-insta.png" alt="">
-          <img class="rede__social" src="/IMG/icon-face.png" alt="">
-          <img class="rede__social" src="/IMG/icone-zap.png" alt="">
+
+       
+
+          <a href = "https://www.instagram.com/" target="_blank">
+          <img class="rede__social" src="../IMG/icon-insta.png" alt="Instagram">
+
+          <a href = "https://www.facebook.com" target="_blank">
+          <img class="rede__social" src="../IMG/icon-face.png" alt="Facebook">
+
+      
+          <a href = "https://www.whatsapp.com" target="_blank">
+          <img class="rede__social" src="../IMG/icone-zap.png" alt="Whatsapp">
         </ul><br>
         
         <ul class="rodape__localizacao">

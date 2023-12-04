@@ -1,500 +1,499 @@
 body {
-    background: #F8F0E8;
+  background: #f8f0e8;
 }
 
 .cabecalho {
-    background:#F8F0E8;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    position: relative;
-    padding: 0.75rem 1.5rem;
+  background: #f8f0e8;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: relative;
+  padding: 0.75rem 1.5rem;
 }
 
 @media screen and (max-width: 760px) {
-    .cabecalho {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.75rem 0.5rem
-    }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+  }
 }
 
 .cabecalho__logo__pizzadivina {
-    display: none;
-} 
+  display: none;
+}
 
 .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .lista__menu {
-    display: none;
-    font-size: 14px;
-    position: absolute;
-    width: 25vw;
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  width: 25vw;
 }
 
-.container__botao:checked~.lista__menu {
-    display: block;
-    padding: 0px 9px;
+.container__botao:checked ~ .lista__menu {
+  display: block;
+  padding: 0px 9px;
 }
 
-.lista__menu__informacoes, .lista__menu__item {
-    padding: 1em;
-    background:#F8F0E8;
+.lista__menu__informacoes,
+.lista__menu__item {
+  padding: 1em;
+  background: #f8f0e8;
 }
 
 .lista__menu__informacoes {
-    color: #d31608;
-    font-family: "inter";
-    font-weight: 400;
-    text-transform: uppercase;
+  color: #d31608;
+  font-family: "inter";
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .lista__menu__link {
-    color: black;
-    cursor: pointer;
-    font-family: "inter";
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none; 
+  color: black;
+  cursor: pointer;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .lista__menu__link:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .container__botao {
-    display: none;
+  display: none;
 }
 
 .cabecalho__menu__hamburguer {
-    background-image: url("../IMG/menu-hamburguer.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    margin: 0px 15px;
+  background-image: url("../IMG/menu-hamburguer.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0px 15px;
 }
 
 .container__carrinho {
-    align-items: center;
-    display: flex;
-    margin: 0px 25px;
+  align-items: center;
+  display: flex;
+  margin: 0px 25px;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .lista__menu__login {
-    color: black;
-    font-family: "inter";
-    font-weight: 500;
-    text-decoration: none;
+  color: black;
+  font-family: "inter";
+  font-weight: 500;
+  text-decoration: none;
 }
 .lista__menu__login:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .imagem__carrinho {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .lista__menu__carrinho {
-    color: black;
-    font-family: "inter";
-    font-weight: 500;
-    text-decoration: none;   
+  color: black;
+  font-family: "inter";
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .lista__menu__carrinho:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .container__logo__pedido {
-    font-family: 'Inter';
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 0.75rem 1.5rem;
-    top: 20px;
-    position: relative;
-    text-transform: uppercase;
+  font-family: "Inter";
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1.5rem;
+  top: 20px;
+  position: relative;
+  text-transform: uppercase;
 }
 
-.janela-modal{
-	position: relative;
-	top: 0;
-	left: 0;
-	display: none;
-	align-items: center;
-	justify-content: center;
-	z-index: 999;
+.janela-modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
 }
 
-.modal{
-	position:relative;
-	width: 60%;
-	min-width: 30px;
-	max-width: 150px;
-	max-height: 20px;
-	min-height: 5px;
-	background-color: #b8f3b4b8;
-	backdrop-filter: blur(10px);
-	padding: 50px;
-	text-align: center;
-	border-radius: 20px;
+.modal {
+  position: relative;
+  width: 60%;
+  min-width: 30px;
+  max-width: 150px;
+  max-height: 20px;
+  min-height: 5px;
+  background-color: #b8f3b4b8;
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
 }
 
-.janela-modal.abrir{
-	display: flex;
+.janela-modal.abrir {
+  display: flex;
 }
 
-.fechar{
-	position: absolute;
-	top: -10px;
-	right: -10px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: 0;
-	background-color: red;
-	color: #fff;
-	font-size: 20px;
-	cursor: pointer;
+.fechar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
-    .container__logo__pedido {
-        top: 65px;
-        position: relative;
-    }
+  .container__logo__pedido {
+    top: 65px;
+    position: relative;
+  }
 }
 
 .logo__carrinho {
-    width: 30px;
+  width: 30px;
 }
 
 .img__pedido {
-    height: 80px;
-    width: 80px;
-    border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 425px) {
-    .img__pedido {
-        width: 50px;
-        height: 50px;
-    }
+  .img__pedido {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 345px) {
-    .img__pedido {
-        display: none;
-    }
+  .img__pedido {
+    display: none;
+  }
 }
 
 .container__texto__pedido {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0.75rem 1.5rem;
-    top: 50px;
-    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.75rem 1.5rem;
+  top: 50px;
+  position: relative;
 }
 
 .container__avalia__pedido {
-    color: black;
-    font-family: 'Inter';
-    font-weight: 400;
-    text-transform: uppercase;
-    position: relative;
-    top: 65px;
+  color: black;
+  font-family: "Inter";
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  top: 65px;
 }
 
 @media screen and (max-width: 760px) {
-    .container__avalia__pedidos {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .container__avalia__pedidos {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .container__pedidos {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 760px) {
-    .container__pedidos {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .container__pedidos {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .container__caixa__observacao {
-    display: flex;
-    flex-direction: column;
-    font-family: "inter";
-    font-weight: 500;
-    width: 35%;
-    padding: 0.75rem 1.5rem;
-    position: relative;
-    top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: "inter";
+  font-weight: 500;
+  width: 35%;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  top: 50px;
 }
 
 @media screen and (max-width: 760px) {
-    .container__caixa__observacao {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .container__caixa__observacao {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-
 .caixa__obsevacao {
-    padding: 0.75rem 0rem;
+  padding: 0.75rem 0rem;
 }
 
 .container__retirar__pedido {
-    font-family: "inter";
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    position: relative;
-    top: 50px;
+  font-family: "inter";
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  top: 50px;
 }
 
 .taxa__entrega {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .container__total {
-    display: flex;
-    font-family: inter;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    gap: 30px;
-    position: relative;
-    top: 50px;
+  display: flex;
+  font-family: inter;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  gap: 30px;
+  position: relative;
+  top: 50px;
 }
 
 .container__btn {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px;  
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
 }
 
 .btn {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90312ACC;
-    color: white;
-    height: 40px;
-    width: 165px;
-    position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90312acc;
+  color: white;
+  height: 40px;
+  width: 165px;
+  position: relative;
 }
 
-.botao-remove-produto{
-	cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90312ACC;
-    color: white;
-    height: 40px;
-    width: 165px;
-    position: relative;
+.botao-remove-produto {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90312acc;
+  color: white;
+  height: 40px;
+  width: 105px;
+  position: relative;
 }
 
 .lista__total {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .container__footer {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background: #90312ACC;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    gap: 35px;
-    padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
-    position: relative;
-    top: 75px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: #90312acc;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  gap: 35px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+  top: 75px;
 }
 
-dialog::backdrop{
-	background-color: rgb(0 0 0 / .3)
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
 }
 
 dialog {
-	border-radius: .5rem;
-	box-shadow: 0 0 1em rgb(0 0 0 / .3);
-	width: 40%;
-	justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  width: 40%;
+  justify-content: center;
 }
 
 .box {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 760px) {
-    .container__footer {
-        display: block;
-    }
+  .container__footer {
+    display: block;
+  }
 }
 
 .cabecalho__texto__horario {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .texto__contato {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .texo__divino__pizzaria {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .rede__social {
-    width: 30px;
-    cursor: pointer;
+  width: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 760px) {
-    .rede__social {
-        margin: 0 10px;
-    }
+  .rede__social {
+    margin: 0 10px;
+  }
 }
 
 .link__rodape {
-    color: white;
-    text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 760px) { 
-    .cabecalho__logo__pizzadivina {
-        display: inline-block; 
-        width: 28vh;
-        height: 22vh;
-        bottom: 35px;
-        position: relative;
-    } 
-    
-    .cabecalho__menu__hamburguer {
-        display: none;
-    }
+@media screen and (min-width: 760px) {
+  .cabecalho__logo__pizzadivina {
+    display: inline-block;
+    width: 28vh;
+    height: 22vh;
+    bottom: 35px;
+    position: relative;
+  }
 
-    .lista__menu {
-        display: none;
-        display: flex;
-        padding: 0.75rem 0.9375rem;
-        position: relative;
-        top: auto;
-        margin: auto;
-    }
+  .cabecalho__menu__hamburguer {
+    display: none;
+  }
 
-    .container__botao:checked~.lista__menu {
-        display: flex;
-    }
+  .lista__menu {
+    display: none;
+    display: flex;
+    padding: 0.75rem 0.9375rem;
+    position: relative;
+    top: auto;
+    margin: auto;
+  }
 
-    .lista__menu__link {
-        font-size: 18px;
-    }
+  .container__botao:checked ~ .lista__menu {
+    display: flex;
+  }
 
-    .texto__dias__funcionamento {
-        padding: 10px 0;
-    }
+  .lista__menu__link {
+    font-size: 18px;
+  }
 
-    .rede__social__texto {
-        font-weight: 700;
-    }
+  .texto__dias__funcionamento {
+    padding: 10px 0;
+  }
 
-    .rede__social {
-        width: 30px;
-        cursor: pointer;
-        margin: 0 10px;
-        padding: 10px 0;
-    }
+  .rede__social__texto {
+    font-weight: 700;
+  }
 
-    .texto__contato {
-        font-family: "inter";
-        font-weight: 700;
-        font-size: 14px;
-    }
+  .rede__social {
+    width: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 0;
+  }
 
-    .texto__rede__sociais {
-        padding: 10px 0;
-    }
+  .texto__contato {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+  }
 
-    .texo__divino__pizzaria {
-        font-family: "inter";
-        font-weight: 700;
-        font-size: 14px;
-        padding: 10px 0;
-    } 
-    
-    .rodape__localizacao {
-        position: relative;
-        bottom: 11px;
+  .texto__rede__sociais {
+    padding: 10px 0;
+  }
 
-    }
-} 
+  .texo__divino__pizzaria {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .rodape__localizacao {
+    position: relative;
+    bottom: 11px;
+  }
+}
 
 @media screen and (min-width: 760px) {
-    .cabecalho__logo__pizzadivina {
-        display: none;
-        display: inline-block;
-        width: 28vh;
-        height: 22vh;
-        bottom: 35px;
-        position: relative;
-    }
+  .cabecalho__logo__pizzadivina {
+    display: none;
+    display: inline-block;
+    width: 28vh;
+    height: 22vh;
+    bottom: 35px;
+    position: relative;
+  }
 
-    .cabecalho__menu__hamburguer {
-        display: none;
-    }
+  .cabecalho__menu__hamburguer {
+    display: none;
+  }
 
-    .lista__menu {
-        display: none;
-        display: flex;
-        padding: 0.75rem 0.9375rem;
-        position: relative;
-        top: auto;
-    }
+  .lista__menu {
+    display: none;
+    display: flex;
+    padding: 0.75rem 0.9375rem;
+    position: relative;
+    top: auto;
+  }
 
-    .container__botao:checked~.lista__menu {
-        display: flex;
-    }
+  .container__botao:checked ~ .lista__menu {
+    display: flex;
+  }
 
-    .menu__container__historia {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+  .menu__container__historia {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
-    .imagem__pizzaiolo {
-        width: 25%;
-        height: 25%;
-    }
+  .imagem__pizzaiolo {
+    width: 25%;
+    height: 25%;
+  }
 
-    .link__rodape {
-        color: white;
-    }
+  .link__rodape {
+    color: white;
+  }
 }
