@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="../IMG/divina-pizzaria.png" type="image/x-icon">
     <title>Pizzaria Divina - Carrinho</title>
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/teste.css">
     <link rel="stylesheet" href="../CSS/carrinho.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,53 +18,38 @@
             <h1>Carrinho</h1>
             <img class="logo__carrinho" src="../IMG/carrinho.png" alt="">
         </section>
-        <div>
-            <section class="container__avalia__pedido">
-                <div>
-                    <ul class="container__pedidos">
-                        <img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
-                        <li class="pedido__texto">Descrição</li>
-                        <li class="pedido__texto">QTD</li>
-                        <li class="pedido__texto">Valor</li>
-                        <li class="pedido__texto">Subtotal</li>
-                    </ul>
-                </div><hr>
-            </section>
-            <section class="container__avalia__pedido">
-                <div>
-                    <ul class="container__pedidos">
-                        <img class="img__pedido" src="../IMG/img-pizza.png" alt="">
-                        <li class="pedido__texto">Marguerita</li>
-                        <li class="pedido__texto">1</li>
-                        <li class="pedido__texto">49,99</li>
-                        <li class="pedido__texto">49,99</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="container__avalia__pedido">
-                <div>
-                    <ul class="container__pedidos">
-                        <img class="img__pedido" src="../IMG/pizza-de-abobrinha.jpg" alt="">
-                        <li>Abobrinha</li>
-                        <li>1</li>
-                        <li>53,99</li>
-                        <li>53,99</li>
-                    </ul>
-                </div> 
-            </section>
-            <section class="container__avalia__pedido">  
-                <div>
-                    <ul class="container__pedidos">
-                        <img class="img__pedido" src="../IMG/img-pizza.png" alt="">
-                        <li>Calabresa</li>
-                        <li>1</li>
-                        <li>55,99</li>
-                        <li>55,99</li>
-                    </ul>
-                </div><hr>
-            </section>
-
-
+        <table>
+			<thead>
+				<tr >
+					<section class="container__avalia__pedido">
+						<div>
+							<ul class="container__pedidos">
+								<img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
+								<li class="pedido__texto">Descrição</li>
+								<li class="pedido__texto">QTD</li>
+								<li class="pedido__texto">Valor</li>
+							</ul>
+						</div><hr>
+					</section>
+				</tr>
+			</thead>
+			<tbody class="corpo-itens-carrinho">
+				<tr class="produto-carrinho">
+					<section class="container__avalia__pedido">
+						<div>
+							<ul class="container__pedidos">
+								<img class="img__pedido" src="../IMG/img-pizza.png" alt="">
+								<li class="pedido__texto">Marguerita</li>
+								<li class="pedido__texto">1</li>
+								<li class="pedido__texto">49,99</li>
+								<button class="botao-remove-produto">Remover</button>
+							</ul>
+						</div>
+					</section>
+				</tr>
+			</tbody>
+		</table>
+		<div>
             <div class="container__caixa__observacao">
                 <label class="caixa__obsevacao" for="mensagem">Observações</label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Ex:Sem cebola, tomate, etc..."></textarea>
@@ -96,12 +80,16 @@
             </section> 
         </div>
         </section>
-        <div class="container__btn">
-           <button>Confirmar pedido</button>
-		   <dialog>
-			<p class="box" >Pedido Concluído</p>
-		   </dialog>
-        </div>
+        <div onclick="abreModal()" class="container__btn">
+           <button type="button" class="btn">Confirmar pedido</button>
+		</div>
+		
+		<div class="janela-modal" id="janela-modal">
+			<div class="modal">
+				<button id="fechar" class="fechar">X</button>
+				<h3>Pedido Concluído</h3>
+			</div>
+		</div>
     </main>
 	<script src="../JAVASCRIPT/carrinho.js"></script>
 	<script src="../JAVASCRIPT/footer.js"></script>

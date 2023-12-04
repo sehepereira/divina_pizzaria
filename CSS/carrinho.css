@@ -129,6 +129,48 @@ body {
     text-transform: uppercase;
 }
 
+.janela-modal{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+
+.modal{
+	position:relative;
+	width: 60%;
+	min-width: 30px;
+	max-width: 150px;
+	max-height: 20px;
+	min-height: 5px;
+	background-color: #b8f3b4b8;
+	backdrop-filter: blur(10px);
+	padding: 50px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.janela-modal.abrir{
+	display: flex;
+}
+
+.fechar{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 0;
+	background-color: red;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 760px) {
     .container__logo__pedido {
         top: 65px;
@@ -248,8 +290,20 @@ body {
     top: 50px;  
 }
 
-button {
+.btn {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #90312ACC;
+    color: white;
+    height: 40px;
+    width: 165px;
+    position: relative;
+}
+
+.botao-remove-produto{
+	cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;

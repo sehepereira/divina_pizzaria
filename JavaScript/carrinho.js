@@ -1,11 +1,17 @@
-const button = document.querySelector("button");
-const modal = document.querySelector("dialog")
-const buttonClose = document.querySelector("dialogbutton")
+const removeProductButtons = document.getElementsByClassName("botao-remove-produto")
 
-button.onclick = function() {
-    modal.show()
+for (var i = 0; i < removeProductButtons.length; i++){
+	removeProductButtons[i].addEventListener("click", function(event){
+	event.target.parentElement.parentElement.remove()
+	})
 }
 
-buttonClose.onclick = function() {
-	modal.close()
+function abreModal(){
+	const modal = document.getElementById('janela-modal')
+	modal.classList.add('abrir')
+	
+	modal.addEventListener('click', (e) => {
+		if(e.target.id == 'fechar' || e.target.id == 'janela-modal')
+			modal.classList.remove('abrir')
+	})
 }
