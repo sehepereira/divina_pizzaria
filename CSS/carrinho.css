@@ -94,7 +94,7 @@ body {
 .lista__menu__login {
   color: black;
   font-family: "inter";
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 .lista__menu__login:hover {
@@ -109,7 +109,7 @@ body {
 .lista__menu__carrinho {
   color: black;
   font-family: "inter";
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -291,7 +291,10 @@ body {
 }
 
 .btn {
+  border-radius: 5px;
   cursor: pointer;
+  font-family: "inter";
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +306,10 @@ body {
 }
 
 .botao-remove-produto {
+  border-radius: 5px;
   cursor: pointer;
+  font-family: "inter";
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,8 +373,10 @@ dialog {
 }
 
 .texo__divino__pizzaria {
+  color: white;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .rede__social {
@@ -443,10 +451,13 @@ dialog {
   }
 
   .texo__divino__pizzaria {
+    color: white;
     font-family: "inter";
     font-weight: 700;
     font-size: 14px;
     padding: 10px 0;
+    text-decoration: underline;
+   
   }
 
   .rodape__localizacao {
@@ -486,11 +497,6 @@ dialog {
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .imagem__pizzaiolo {
-    width: 25%;
-    height: 25%;
   }
 
   .link__rodape {

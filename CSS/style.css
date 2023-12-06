@@ -232,8 +232,10 @@ h3 {
 }
 
 .texo__divino__pizzaria {
+    color: white;
     font-size: 14px;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .rede__social {
@@ -360,10 +362,12 @@ h3 {
     }
 
     .texo__divino__pizzaria {
+        color: white;
         font-family: "inter";
         font-weight: 700;
         font-size: 14px;
         padding: 10px 0;
+        text-decoration: underline;
     } 
     
     .rodape__localizacao {

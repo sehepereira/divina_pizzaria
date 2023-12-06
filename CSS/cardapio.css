@@ -148,10 +148,13 @@ h1 {
     margin: 0 1rem;
 }
 
-@media screen and (max-width: 780px) {
-    .container__pizza__salgada__texto {
-        margin: auto;
-    }
+.botao-adiciona-produto {
+    background-color: darkcyan;
+    border-radius: 5px;
+    font-family: "inter";
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 5px;
 }
 
 .container__pizza__doce {
@@ -204,8 +207,10 @@ h1 {
 }
 
 .texo__divino__pizzaria {
+    color: white;
     font-size: 14px;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .rede__social {
@@ -280,10 +285,12 @@ h1 {
     }
 
     .texo__divino__pizzaria {
+        color: white;
         font-family: "inter";
         font-weight: 700;
         font-size: 14px;
         padding: 10px 0;
+        text-decoration: underline;
     } 
     
     .rodape__localizacao {

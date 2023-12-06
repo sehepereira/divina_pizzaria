@@ -121,13 +121,6 @@
     color: #d31608;
 }
 
-/* .container__historia {
-    color: darkgrey;
-    background: #F8F0E8;
-    font-family: "inter";
-    font-weight: 700;
-} */
-
 .menu__container__historia {
     flex-direction: column;
     gap: 8px 8px;
@@ -280,8 +273,10 @@ input[type="checkbox"] {
 }
 
 .texo__divino__pizzaria {
+    color: white;
     font-size: 14px;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .rede__social {
