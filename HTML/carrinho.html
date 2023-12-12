@@ -13,85 +13,104 @@
 </head> 
 <body>
 	<script src="../JAVASCRIPT/header.js"></script>
+  <h1>Carrinho</h1>
+  <div>
+    <h3>Itens no Carrinho</h3>
+    <ul id="listaCarrinho"></ul>
+  </div>
+
+  <script>
+    // Recupera os itens do carrinho do localStorage
+    const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
+
+    // Exibe os itens do carrinho na página do carrinho
+    const listaCarrinho = document.getElementById('listaCarrinho');
+    itensCarrinho.forEach(function(item) {
+      const novoElemento = document.createElement('li');
+      novoElemento.textContent = `Nome: ${item.nome}, Quantidade: ${item.valor}`;
+      listaCarrinho.appendChild(novoElemento);
+    });
+    
+  </script>
     <main>
-        <section class="container__logo__pedido">
-            <h1>Carrinho</h1>
-            <img class="logo__carrinho" src="../IMG/carrinho.png" alt="">
+      <section class="container__logo__pedido">
+          <h1>Carrinho</h1>
+          <img class="logo__carrinho" src="../IMG/carrinho.png" alt="">
+      </section>
+      <table>
+    <thead>
+      <tr >
+        <section class="container__avalia__pedido">
+          <div>
+            <ul class="container__pedidos">
+              <img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
+              <li class="pedido__texto">Descrição</li>
+              <li class="pedido__texto">QTD</li>
+              <li class="pedido__texto">Valor</li>
+            </ul>
+          </div><hr>
         </section>
-        <table>
-			<thead>
-				<tr >
-					<section class="container__avalia__pedido">
-						<div>
-							<ul class="container__pedidos">
-								<img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
-								<li class="pedido__texto">Descrição</li>
-								<li class="pedido__texto">QTD</li>
-								<li class="pedido__texto">Valor</li>
-							</ul>
-						</div><hr>
-					</section>
-				</tr>
-			</thead>
-			<tbody class="corpo-itens-carrinho">
-				<tr class="produto-carrinho">
-					<section class="container__avalia__pedido">
-						<div>
-							<ul class="container__pedidos">
-								<img class="img__pedido" src="../IMG/img-pizza.png" alt="">
-								<li class="pedido__texto">Marguerita</li>
-								<li class="pedido__texto">1</li>
-								<li class="pedido__texto">49,99</li>
-								<button class="botao-remove-produto">Remover</button>
-							</ul>
-						</div>
-					</section>
-				</tr>
-			</tbody>
-		</table>
-		<div>
-            <div class="container__caixa__observacao">
-                <label class="caixa__obsevacao" for="mensagem">Observações</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Ex:Sem cebola, tomate, etc..."></textarea>
-            </div>
-        </div>
-        <div>
-            <section class="container__retirar__pedido">
-                <h5 class="opcoes__retirada__texto">Opções de retirada</h5>
-                <p class="taxa__entrega">Taxa de entrega 12,00</p>
-                <label for="radio-retirar">Balcão</label>
-                <input type="radio" name="contato" value="texto" id="radio-retirar">
-                <label for="radio-entrega">Entrega</label>
-                <input type="radio" name="contato" value="texto" id="radio-entrega">
-            </section>
-        </div>
-        <div>
-            <section class="container__total">
-                <ul>
-                    <li class="lista__total">Valores</li>
-                    <li class="lista__total">Frete</li>
-                    <li class="lista__total">Total</li>
-                </ul>
-                <ul>
-                    <li class="lista__total">171,97</li>
-                    <li class="lista__total">12,00</li>
-                    <li class="lista__total">171,97</li>
-                </ul>
-            </section> 
-        </div>
+      </tr>
+    </thead>
+    <tbody class="corpo-itens-carrinho">
+      <tr class="produto-carrinho">
+        <section class="container__avalia__pedido">
+          <div>
+            <ul class="container__pedidos">
+              <img class="img__pedido" src="../IMG/img-pizza.png" alt="">
+              <li class="pedido__texto">Marguerita</li>
+              <li class="pedido__texto">1</li>
+              <li class="pedido__texto">49,99</li>
+              <button class="botao-remove-produto">Remover</button>
+            </ul>
+          </div>
         </section>
-        <div onclick="abreModal()" class="container__btn">
-           <button type="button" class="btn">Confirmar pedido</button>
-		</div>
-		
-		<div class="janela-modal" id="janela-modal">
-			<div class="modal">
-				<button id="fechar" class="fechar">X</button>
-				<h3>Pedido Concluído</h3>
-			</div>
-		</div>
-    </main>
-	<script src="../JAVASCRIPT/carrinho.js"></script>
-	<script src="../JAVASCRIPT/footer.js"></script>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+          <div class="container__caixa__observacao">
+              <label class="caixa__obsevacao" for="mensagem">Observações</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Ex:Sem cebola, tomate, etc..."></textarea>
+          </div>
+      </div>
+      <div>
+          <section class="container__retirar__pedido">
+              <h5 class="opcoes__retirada__texto">Opções de retirada</h5>
+              <p class="taxa__entrega">Taxa de entrega 12,00</p>
+              <label for="radio-retirar">Balcão</label>
+              <input type="radio" name="contato" value="texto" id="radio-retirar">
+              <label for="radio-entrega">Entrega</label>
+              <input type="radio" name="contato" value="texto" id="radio-entrega">
+          </section>
+      </div>
+      <div>
+          <section class="container__total">
+              <ul>
+                  <li class="lista__total">Valores</li>
+                  <li class="lista__total">Frete</li>
+                  <li class="lista__total">Total</li>
+              </ul>
+              <ul>
+                  <li class="lista__total">171,97</li>
+                  <li class="lista__total">12,00</li>
+                  <li class="lista__total">171,97</li>
+              </ul>
+          </section> 
+      </div>
+      </section>
+      <div onclick="abreModal()" class="container__btn">
+         <button type="button" class="btn">Confirmar pedido</button>
+  </div>
+  
+  <div class="janela-modal" id="janela-modal">
+    <div class="modal">
+      <button id="fechar" class="fechar">X</button>
+      <h3>Pedido Concluído</h3>
+    </div>
+  </div>
+  </main>
+<script src="../JAVASCRIPT/carrinho.js"></script>
+<script src="../JAVASCRIPT/footer.js"></script>
 </body>
 </html>

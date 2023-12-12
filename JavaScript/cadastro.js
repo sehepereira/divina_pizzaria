@@ -1,4 +1,4 @@
-var botaoLogin = document.querySelector("#form-cadastro");
+var botaoLogin = document.querySelector("#botaoCadastro");
 botaoLogin.addEventListener("click", function(event) {
     event.preventDefault();
 

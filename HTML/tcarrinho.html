@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrinho</title>
+</head>
+<body>
+  <h1>Carrinho</h1>
+  <div>
+    <h3>Itens no Carrinho</h3>
+    <ul id="listaCarrinho"></ul>
+  </div>
+
+  <script>
+    // Recupera os itens do carrinho do localStorage
+    const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
+
+    // Exibe os itens do carrinho na página do carrinho
+    const listaCarrinho = document.getElementById('listaCarrinho');
+    itensCarrinho.forEach(function(item) {
+      const novoElemento = document.createElement('li');
+      novoElemento.textContent = `Nome: ${item.imagem}, Quantidade: ${item.valor}`;
+      listaCarrinho.appendChild(novoElemento);
+    });
+  </script>
+</body>
+</html>
