@@ -1,116 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMG/divina-pizzaria.png" type="image/x-icon">
-    <title>Pizzaria Divina - Carrinho</title>
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/carrinho.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap" rel="stylesheet">
-</head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../IMG/divina-pizzaria.png" type="image/x-icon">
+  <title>Pizzaria Divina - Carrinho</title>
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <link rel="stylesheet" href="../CSS/carrinho.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
 <body>
-	<script src="../JAVASCRIPT/header.js"></script>
-  <h1>Carrinho</h1>
-  <div>
-    <h3>Itens no Carrinho</h3>
-    <ul id="listaCarrinho"></ul>
-  </div>
+  <script src="../JAVASCRIPT/header.js"></script>
 
-  <script>
-    // Recupera os itens do carrinho do localStorage
-    const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
-
-    // Exibe os itens do carrinho na página do carrinho
-    const listaCarrinho = document.getElementById('listaCarrinho');
-    itensCarrinho.forEach(function(item) {
-      const novoElemento = document.createElement('li');
-      novoElemento.textContent = `Nome: ${item.nome}, Quantidade: ${item.valor}`;
-      listaCarrinho.appendChild(novoElemento);
-    });
-    
-  </script>
-    <main>
-      <section class="container__logo__pedido">
-          <h1>Carrinho</h1>
-          <img class="logo__carrinho" src="../IMG/carrinho.png" alt="">
-      </section>
-      <table>
-    <thead>
-      <tr >
-        <section class="container__avalia__pedido">
-          <div>
-            <ul class="container__pedidos">
-              <img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
-              <li class="pedido__texto">Descrição</li>
-              <li class="pedido__texto">QTD</li>
-              <li class="pedido__texto">Valor</li>
-            </ul>
-          </div><hr>
-        </section>
-      </tr>
-    </thead>
-    <tbody class="corpo-itens-carrinho">
-      <tr class="produto-carrinho">
-        <section class="container__avalia__pedido">
-          <div>
-            <ul class="container__pedidos">
-              <img class="img__pedido" src="../IMG/img-pizza.png" alt="">
-              <li class="pedido__texto">Marguerita</li>
-              <li class="pedido__texto">1</li>
-              <li class="pedido__texto">49,99</li>
-              <button class="botao-remove-produto">Remover</button>
-            </ul>
-          </div>
-        </section>
-      </tr>
-    </tbody>
-  </table>
-  <div>
-          <div class="container__caixa__observacao">
-              <label class="caixa__obsevacao" for="mensagem">Observações</label>
-              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Ex:Sem cebola, tomate, etc..."></textarea>
-          </div>
-      </div>
-      <div>
-          <section class="container__retirar__pedido">
-              <h5 class="opcoes__retirada__texto">Opções de retirada</h5>
-              <p class="taxa__entrega">Taxa de entrega 12,00</p>
-              <label for="radio-retirar">Balcão</label>
-              <input type="radio" name="contato" value="texto" id="radio-retirar">
-              <label for="radio-entrega">Entrega</label>
-              <input type="radio" name="contato" value="texto" id="radio-entrega">
+  <main>
+    <section class="container__logo__pedido">
+      <h1>Carrinho</h1>
+      <img class="logo__carrinho" src="../IMG/carrinho.png" alt="">
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <section class="container__avalia__pedido">
+            <div>
+              <ul class="container__pedidos">
+                <img class="img__pedido" src="../IMG/forno-a-lenha - titulo.png" alt="">
+                <li class="pedido__texto">Descrição</li>
+                <li class="pedido__texto">QTD</li>
+                <li class="pedido__texto">Valor</li>
+                <li class="pedido__texto">Ação</li>
+              </ul>
+            </div>
+            <hr>
           </section>
-      </div>
-      <div>
-          <section class="container__total">
-              <ul>
-                  <li class="lista__total">Valores</li>
-                  <li class="lista__total">Frete</li>
-                  <li class="lista__total">Total</li>
+        </tr>
+      </thead>
+      <tbody class="corpo-itens-carrinho">
+        <tr class="produto-carrinho">
+          <section class="container__avalia__pedido">
+
+            <div class="container__pedidos">
+              <ul id="listaCarrinho" class="">
+                <script>
+                  function processarItensCarrinho() {
+                    const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
+                    var tempPizzas = [];
+
+                    itensCarrinho.forEach(function (pizza) {
+                      const verificaPizzaTemp = tempPizzas.find(item => item.nome == pizza.nome);
+                      if (verificaPizzaTemp) {
+                        tempPizzas.forEach(item => {
+                          if (item.nome == pizza.nome) {
+                            item.quantidade += 1;
+                          }
+                        });
+                      } else {
+                        tempPizzas.push({
+                          imagem: pizza.imagem,
+                          nome: pizza.nome,
+                          valor: pizza.valor,
+                          quantidade: pizza.quantidade
+                        });
+                        console.log(typeof (pizza.valor));
+                      }
+                    });
+
+                    localStorage.setItem('itensCarrinho', JSON.stringify(Object.values(tempPizzas)));
+                  }
+
+                  processarItensCarrinho();
+
+                  const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
+                  const listaCarrinho = document.getElementById('listaCarrinho');
+
+                  itensCarrinho.forEach(function (item, index) {
+                    const novoElemento = document.createElement('li');
+                    const divElement = document.createElement('div');
+                    divElement.className = "item__carrinho";
+
+                    const imgElement = document.createElement('img');
+                    imgElement.className = "logo__imagem__cardapio";
+                    imgElement.src = item.imagem;
+                    divElement.appendChild(imgElement);
+
+                    const divNome = document.createElement('div');
+                    divNome.textContent = `${item.nome}`;
+                    divElement.appendChild(divNome);
+
+                    const divQtd = document.createElement('div');
+                    divQtd.textContent = `${item.quantidade}`;
+                    divElement.appendChild(divQtd);
+
+                    const divValor = document.createElement('div');
+                    divValor.textContent = `${item.valor}`;
+                    divElement.appendChild(divValor);
+
+                    const btnExcluir = document.createElement('button');
+                    btnExcluir.textContent = '-';
+                    btnExcluir.className = 'botao-remove-produto';
+
+                    btnExcluir.addEventListener('click', function () {
+                      handleRemoveItem(item, novoElemento);
+                    });
+
+                    const btnIncrementar = document.createElement('button');
+                    btnIncrementar.textContent = '+';
+                    btnIncrementar.className = 'botao-remove-produto';
+
+                    btnIncrementar.addEventListener('click', function () {
+                      handleIncrementItem(item);
+                    });
+
+                    divElement.appendChild(btnIncrementar);
+                    divElement.appendChild(btnExcluir);
+
+                    novoElemento.appendChild(divElement);
+                    listaCarrinho.appendChild(novoElemento);
+                  });
+
+                  function handleRemoveItem(item, novoElemento) {
+                    const itemIndex = itensCarrinho.findIndex(pizza => pizza.nome === item.nome);
+
+                    if (itensCarrinho[itemIndex].quantidade > 1) {
+                      itensCarrinho[itemIndex].quantidade -= 1;
+                    } else {
+                      itensCarrinho.splice(itemIndex, 1);
+                      listaCarrinho.removeChild(novoElemento);
+                    }
+
+                    localStorage.setItem('itensCarrinho', JSON.stringify(itensCarrinho));
+                    window.location.reload();
+                  }
+
+                  function handleIncrementItem(item) {
+                    const itemIndex = itensCarrinho.findIndex(pizza => pizza.nome === item.nome);
+
+                    if (itemIndex !== -1) {
+                      itensCarrinho[itemIndex].quantidade += 1;
+                      localStorage.setItem('itensCarrinho', JSON.stringify(itensCarrinho));
+                      window.location.reload();
+                    }
+                  }
+
+
+                </script>
+
               </ul>
-              <ul>
-                  <li class="lista__total">171,97</li>
-                  <li class="lista__total">12,00</li>
-                  <li class="lista__total">171,97</li>
-              </ul>
-          </section> 
+            </div>
+
+          </section>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <div class="container__caixa__observacao">
+        <label class="caixa__obsevacao" for="mensagem">Observações</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+          placeholder="Ex:Sem cebola, tomate, etc..."></textarea>
       </div>
-      </section>
-      <div onclick="abreModal()" class="container__btn">
-         <button type="button" class="btn">Confirmar pedido</button>
-  </div>
-  
-  <div class="janela-modal" id="janela-modal">
-    <div class="modal">
-      <button id="fechar" class="fechar">X</button>
-      <h3>Pedido Concluído</h3>
     </div>
-  </div>
+    <div>
+      <section class="container__total">
+        <ul>
+          <li class="lista__total">Valores</li>
+          <li class="lista__total">Frete</li>
+          <li class="lista__total">Total</li>
+        </ul>
+        <ul>
+          <li id="valor" class="lista__total">
+          </li>
+          <li class="lista__total">R$ 12,00</li>
+          <li id="valorTotal" class="lista__total">
+          </li>
+          <script>
+            function calcularValorTotal() {
+              var valorTotal = 0;
+              const itensCarrinho = JSON.parse(localStorage.getItem('itensCarrinho')) || [];
+
+              itensCarrinho.forEach(function (pizza) {
+                pizza.valor = parseFloat(pizza.valor.replace("R$", "").replace(",", "."));
+                valorTotal += pizza.quantidade * pizza.valor;
+              })
+              console.log(valorTotal);
+              return valorTotal;
+            }
+            function exibirValor() { 
+              var valor = calcularValorTotal(); 
+              var elementoValor = document.getElementById('valor'); 
+              elementoValor.textContent = 'R$' + valor.toFixed(2);
+
+              var valorTotal = calcularValorTotal() + 12; 
+              var elementoValorTotal = document.getElementById('valorTotal'); 
+              elementoValorTotal.textContent = 'R$' + valorTotal.toFixed(2);
+            }
+            window.onload = exibirValor;
+          </script>
+        </ul>
+      </section>
+    </div>
+    </section>
+    <div onclick="abreModal()" class="container__btn">
+      <button type="button" class="btn">Confirmar pedido</button>
+    </div>
+
+    <div class="janela-modal" id="janela-modal">
+      <div class="modal">
+        <button id="fechar" class="fechar">X</button>
+        <h3>Pedido Concluído</h3>
+      </div>
+    </div>
   </main>
-<script src="../JAVASCRIPT/carrinho.js"></script>
-<script src="../JAVASCRIPT/footer.js"></script>
+  <script src="../JAVASCRIPT/carrinho.js"></script>
+  <script src="../JAVASCRIPT/footer.js"></script>
 </body>
+
 </html>

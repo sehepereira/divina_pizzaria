@@ -457,7 +457,6 @@ dialog {
     font-size: 14px;
     padding: 10px 0;
     text-decoration: underline;
-   
   }
 
   .rodape__localizacao {
@@ -502,4 +501,16 @@ dialog {
   .link__rodape {
     color: white;
   }
+}
+
+.logo__imagem__cardapio {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.item__carrinho {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
