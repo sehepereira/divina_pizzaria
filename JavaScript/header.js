@@ -1,11 +1,11 @@
-const header = document.createElement('header');
+const header = document.createElement("header");
 
 header.innerHTML = `
     <header class="cabecalho">
       <img
       class="cabecalho__logo__pizzadivina"
       src="../IMG/logo 1.png"
-      alt="Logo divina-pizzaria"/>
+      alt="Logo divina-pizzaria" width ="90px" />
      
       <div class="container">
         <nav class="container__lista__navegacao">
@@ -13,10 +13,17 @@ header.innerHTML = `
           <label for="menu">
             <span class="cabecalho__menu__hamburguer"></span>
           </label>
+
+
           <ul class="lista__menu">
             <li class="lista__menu__item">
               <a href="../HTML/index.html" class="lista__menu__link">Inicio</a>
             </li>
+
+         
+
+<br> <br> <br>
+
             <li class="lista__menu__item">
               <a href="../HTML/cardapio.html" class="lista__menu__link"
                 >Cardápio</a>
@@ -24,6 +31,10 @@ header.innerHTML = `
           </ul>
         </nav>
       </div>
+
+
+      <br> <br> <br>
+
       <div class="container__carrinho">
         <nav class="container__carrinho__navegacao">
           <ul class="login">
@@ -34,17 +45,26 @@ header.innerHTML = `
             <li class="lista__menu__login">
               <a class="lista__menu__login" href="../HTML/login.html">Login</a>
             </li>
+
+<br> <br> <br>
+
             <img
               class="imagem__carrinho"
               src="../IMG/carrinho.png"
               alt="Imagem carrinho"/>
-            <li class="lista__menu__carrinho">
+              
+              <li class="lista__menu__carrinho">
               <a class="lista__menu__carrinho" href="../HTML/carrinho.html">Carrinho</a>
             </li>
           </ul>
         </nav>
       </div>
+
+    
+      
     </header>
+
+  
 `;
 
 document.body.prepend(header);

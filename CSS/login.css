@@ -1,383 +1,411 @@
 .login__interacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .login__interacao > div:first-child {
-    text-align: left;
+  text-align: left;
 }
-  
+
 .login__interacao > div:last-child {
-    text-align: right;
+  text-align: right;
 }
 
-.login__titulo{
-    text-align: center;
-    gap: 10px;
+.login__titulo {
+  text-align: center;
+  gap: 10px;
 }
 
-.login__imagem{
-    color: black;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 0px;
+.login__imagem {
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0px;
 }
 
-.login__dados{
-    color: black;
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
-    padding: 0px;
+.login__dados {
+  color: black;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  padding: 0px;
 }
 
 .login__interacao__link {
-    color: black;
-    font-family: "inter";
-    font-weight: 500;
-    text-transform: uppercase;
+  color: black;
+  font-family: "inter";
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .login__interacao__link:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .lista__menu__link {
-    color: black;
-    cursor: pointer;
-    font-family: "inter";
-    font-weight: 700;
-    text-decoration: none; 
+  color: black;
+  cursor: pointer;
+  font-family: "inter";
+  font-weight: 700;
+  text-decoration: dock;
 }
 
 .lista__menu__link:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .lista__login__link {
-    color: black;
-    cursor: pointer;
-    font-family: "inter";
-    font-weight: 400;
-    text-decoration: none; 
-    font-size: 20px;
-    padding: 10px;
+  color: black;
+  cursor: pointer;
+  font-family: "inter";
+  font-weight: 400;
+  text-decoration: dock;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .lista__login__link:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .container__botao {
-    display: none;
+  display: none;
 }
 
 .cabecalho__menu__hamburguer {
-    background-image: url("../IMG/menu-hamburguer.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    margin: 0px 15px;
+  background-image: url("../IMG/menu-hamburguer.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0px 15px;
 }
 
 .container__carrinho {
-    align-items: center;
-    display: flex;
-    margin: 0px 25px;
+  align-items: center;
+  display: flex;
+  margin: 0px 25px;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .lista__menu__login {
-    color: black;
-    font-family: "inter";
-    font-weight: 700;
-    text-decoration: none;
+  color: black;
+  font-family: "inter";
+  font-weight: 700;
+  text-decoration: dock;
 }
 .lista__menu__login:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .imagem__carrinho {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .lista__menu__carrinho {
-    color: black;
-    font-family: "inter";
-    font-weight: 700;
-    text-decoration: none;   
+  color: black;
+  font-family: "inter";
+  font-weight: 700;
+  text-decoration: dock;
 }
 
 .lista__menu__carrinho:hover {
-    color: #d31608;
+  color: #d31608;
 }
 
 .menu__container__historia {
-    flex-direction: column;
-    gap: 8px 8px;
+  flex-direction: column;
+  gap: 8px 8px;
 }
 
 .menu__container__mensagem {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
 }
-
 
 .imagem__mensagem {
-    align-self: center;
-    width: 320px;
-    bottom: 50px;
-    position: relative;
-}  
-
-.imagem__container__login {
-    align-self: center;
-    width: 32px;
-    height: 36px;
+  align-self: center;
+  width: 320px;
+  bottom: 50px;
+  position: relative;
 }
 
-.termo__uso{
-    color: #000;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.imagem__container__login {
+  align-self: center;
+  width: 32px;
+  height: 36px;
+}
+
+.termo__uso {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 input[type="checkbox"] {
-    width: 60px;
-    height: 25px;
-  }
+  width: 60px;
+  height: 25px;
+}
 
 .container__texto {
-    border: 2px solid;
-    border-radius: 10px;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-direction: column;text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
 }
 
 .container__login {
-    color: grey;
-    border-radius: 10px;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-direction: column;
-    background-size: cover;
+  color: grey;
+  border-radius: 10px;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-direction: column;
+  background-size: cover;
 }
 
 .login__texto {
-    color: black;
-    font-family: "inter";
-    font-weight: 700;
-    font-size: 22px;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
+  color: black;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .login_placeholder {
-    background-color: #F8F0E8;
-    color: grey;
-    border: 2px solid;
-    border-radius: 10px;
-    font-family: "inter";
-    font-weight: 700;
-    font-size: 12px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    gap: 10px;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-direction: column;
-    background-size: cover;
+  background-color: #f8f0e8;
+  color: grey;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "inter";
+  font-weight: 700;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  gap: 10px;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-direction: column;
+  background-size: cover;
 }
 
 .container__footer {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background: #90312ACC;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    gap: 35px;
-    padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: #90312acc;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  gap: 35px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
 }
 
 .botaoCentralizado {
-    display: block;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    /* Estilos opcionais para o botão */
-    color: black;
-    cursor: pointer;
-    font-weight: 400;
-    text-decoration: none; 
-    font-size: 20px;
-    text-align: center;
-    outline: none;
-    background-color: #F8F0E8;
-    border: 2px solid;
-    border-radius: 10px;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 12px;
-    padding: 12px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    background-size: cover;
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  /* Estilos opcionais para o botão */
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  background-color: #f8f0e8;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-size: cover;
 }
 
 @media screen and (max-width: 760px) {
-    .container__footer {
-        display: block;
-    }
+  .container__footer {
+    display: block;
+  }
 }
 
 .cabecalho__texto__horario {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .texto__contato {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .texo__divino__pizzaria {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: underline;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .rede__social {
-    width: 30px;
-    cursor: pointer;
-    margin: 0 15px;
-    padding: 10px 0;
+  width: 30px;
+  cursor: pointer;
+  margin: 0 15px;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 760px) {
-    .rede__social {
-        margin: 0 10px;
-    }
+  .rede__social {
+    margin: 0 10px;
+  }
 }
 
 .cabecalho__logo__pizzadivina {
-    bottom: 65px;
-    width: 30vh;
-    height: 25vh;
-    position: relative;
-} 
+  bottom: 65px;
+  width: 30vh;
+  height: 25vh;
+  position: relative;
+}
 
 .logo__frame {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .link__rodape {
-    color: white;
-    text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 760px) {
-    .cabecalho__logo__pizzadivina {
+  .cabecalho__logo__pizzadivina {
     display: inline-block;
     width: 28vh;
     height: 22vh;
     bottom: 35px;
     position: relative;
-    }
+  }
 
-    .cabecalho {
-        padding: 1.75rem 1.5rem;
-    }
+  .cabecalho {
+    padding: 1.75rem 1.5rem;
+  }
 
-    .cabecalho__menu__hamburguer {
-        display: none;
-    }
+  .cabecalho__menu__hamburguer {
+    display: none;
+  }
 
-    .lista__menu {
-        display: none;
-        display: flex;
-        padding: 0.75rem 0.9375rem;
-        position: relative;
-        top: auto;
-    }
+  .lista__menu {
+    display: none;
+    display: flex;
+    padding: 0.75rem 0.9375rem;
+    position: relative;
+    top: auto;
+  }
 
-    .container__botao:checked~.lista__menu {
-        display: flex;
-    }
+  .container__botao:checked ~ .lista__menu {
+    display: flex;
+  }
 
-    .menu__container__historia {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }  
+  .menu__container__historia {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
-    .lista__menu__link {
-        font-size: 18px;
-    }
+  .lista__menu__link {
+    font-size: 18px;
+  }
 
-    .rede__social__texto {
-        font-weight: 700;
-    }
+  .rede__social__texto {
+    font-weight: 700;
+  }
 
-    .rede__social {
-        width: 30px;
-        cursor: pointer;
-        margin: 0 15px;
-        padding: 10px 0;
-    }
+  .rede__social {
+    width: 30px;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 10px 0;
+  }
 
-    .texto__contato {
-        font-family: "inter";
-        font-weight: 700;
-        font-size: 14px;
-    }
+  .texto__contato {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+  }
 
-    .texto__rede__sociais {
-        padding: 10px 0;
-    }
+  .texto__rede__sociais {
+    padding: 10px 0;
+  }
 
-    .texo__divino__pizzaria {
-        font-family: "inter";
-        font-weight: 700;
-        font-size: 14px;
-        padding: 10px 0;
-    }
+  .texo__divino__pizzaria {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0;
+  }
 
-    .link__rodape {
-        color: white;
-    }
+  .photo {
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 8%;
+    cursor: pointer;
+  }
 
+  element.style {
+    cursor: pointer;
+  }
+
+  .photo_2 {
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 9%;
+  }
+
+  .photo_3 {
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 10%;
+  }
+
+  .photo_4 {
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 8%;
+  }
+
+  .link__rodape {
+    color: white;
+  }
 }

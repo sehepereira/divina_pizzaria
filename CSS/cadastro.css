@@ -1,8 +1,29 @@
 .container__footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: #90312acc;
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 12px;
+  gap: 35px;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  top: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 760px) {
+  .login__dados {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__footer {
     display: flex;
     justify-content: space-between;
     color: white;
-    background: #90312ACC;
+    background: #90312acc;
     font-family: "inter";
     font-weight: 400;
     font-size: 12px;
@@ -11,134 +32,115 @@
     text-transform: uppercase;
     top: 30px;
     position: relative;
+  }
 }
 
 @media screen and (max-width: 760px) {
-    .login__dados {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .container__footer {
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        background: #90312ACC;
-        font-family: "inter";
-        font-weight: 400;
-        font-size: 12px;
-        gap: 35px;
-        padding: 0.75rem 1.5rem;
-        text-transform: uppercase;
-        top: 30px;
-        position: relative;
-    }
+  .container__footer {
+    display: block;
+  }
 }
-    
-    @media screen and (max-width: 760px) {
-        .container__footer {
-            display: block;
-        }
-    }
-    
-    .cabecalho__texto__horario {
-        font-size: 14px;
-        font-weight: 700;
-    }
-    
-    .texto__contato {
-        font-size: 14px;
-        font-weight: 700;
-    }
-    
-    .texo__divino__pizzaria {
-        font-size: 14px;
-        font-weight: 700;
-    }
-    
-    .rede__social {
-        width: 30px;
-        cursor: pointer;
-    }
-    
-    @media screen and (max-width: 760px) {
-        .rede__social {
-            margin: 0 10px;
-        }
-    }
-    
-    .link__rodape {
-        color: white;
-        text-decoration: none; 
-    }
-    
-    @media screen and (min-width: 760px) { 
-        .cabecalho__logo__pizzadivina {
-            display: inline-block; 
-            width: 28vh;
-            height: 22vh;
-            bottom: 35px;
-            position: relative;
-        } 
-        
-        .cabecalho__menu__hamburguer {
-            display: none;
-        }
-    
-        .lista__menu {
-            display: none;
-            display: flex;
-            padding: 0.75rem 0.9375rem;
-            position: relative;
-            top: auto;
-            margin: auto;
-        }
-    
-        .container__botao:checked~.lista__menu {
-            display: flex;
-        }
-    
-        .lista__menu__link {
-            font-size: 18px;
-        }
-    
-        .texto__dias__funcionamento {
-            padding: 10px 0;
-        }
-    
-        .rede__social__texto {
-            font-weight: 700;
-        }
-    
-        .rede__social {
-            width: 30px;
-            cursor: pointer;
-            margin: 0 10px;
-            padding: 10px 0;
-        }
-    
-        .texto__contato {
-            font-family: "inter";
-            font-weight: 700;
-            font-size: 14px;
-        }
-    
-        .texto__rede__sociais {
-            padding: 10px 0;
-        }
-    
-        .texo__divino__pizzaria {
-            font-family: "inter";
-            font-weight: 700;
-            font-size: 14px;
-            padding: 10px 0;
-        } 
-        
-        .rodape__localizacao {
-            position: relative;
-            bottom: 11px;
-    
-        }
-    } 
-    
+
+.cabecalho__texto__horario {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.texto__contato {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.texo__divino__pizzaria {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rede__social {
+  width: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .rede__social {
+    margin: 0 10px;
+  }
+}
+
+.link__rodape {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+  .cabecalho__logo__pizzadivina {
+    display: inline-block;
+    width: 28vh;
+    height: 22vh;
+    bottom: 35px;
+    position: relative;
+  }
+
+  .cabecalho__menu__hamburguer {
+    display: none;
+  }
+
+  .lista__menu {
+    display: none;
+    display: flex;
+    padding: 0.75rem 0.9375rem;
+    position: relative;
+    top: auto;
+    margin: auto;
+  }
+
+  .container__botao:checked ~ .lista__menu {
+    display: flex;
+  }
+
+  .lista__menu__link {
+    font-size: 18px;
+  }
+
+  .texto__dias__funcionamento {
+    padding: 10px 0;
+  }
+
+  .rede__social__texto {
+    font-weight: 700;
+  }
+
+  .rede__social {
+    width: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+
+  .texto__contato {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .texto__rede__sociais {
+    padding: 10px 0;
+  }
+
+  .texo__divino__pizzaria {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .cabecalho__logo__pizzadivina {
+    width: 25%;
+    height: 260%;
+  }
+
+  .rodape__localizacao {
+    position: relative;
+    bottom: 11px;
+  }
+}

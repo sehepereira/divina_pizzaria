@@ -30,6 +30,36 @@ footer.innerHTML = `
       
           <a href = "https://www.whatsapp.com" target="_blank">
           <img class="rede__social" src="../IMG/icone-zap.png" alt="Whatsapp">
+
+
+
+          <!--   <img src="../IMG/Foto pequena.JPG" class="photo" alt="Foto_Gil" width = "50px"/> -->
+
+          <span title="Gilberto" style="cursor: pointer"> <img src="../IMG/Foto pequena.JPG" class="photo" alt="Foto_Gil" width = "50px"> </span>
+
+         <!-- <a>Gilberto</a>  -->
+         
+         <span title="Sergio" style="cursor: pointer">
+          <img src="../IMG/Foto Sergio.JPG" class="photo_2" alt="Foto_Sergio"  width = "60px"/>
+          </span>
+          <!-- <a>Sergio</a>   --> 
+      
+
+          <span title="Zanucci" style="cursor: pointer">
+          <img src="../IMG/Foto Zanucci.JPG" class="photo_3" alt="Foto_GZanucci"  width = "100px"   
+          </span>
+          
+          <a >  <!-- Zanucci</a> -->
+          <span title="Wamberto" style="cursor: pointer">
+          <img src="../IMG/Foto Wamberto.PNG" class="photo_4" alt="Foto_Wamberto"  width ="40px"  
+          
+          </span>
+          
+          <!--  <a >  Wamberto</a> -->
+              
+
+
+
         </ul><br>
         
         <ul class="rodape__localizacao">

@@ -1,60 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMG/divina-pizzaria.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../IMG/divina-pizzaria.png"
+      type="image/x-icon"
+    />
     <title>Pizzaria Divina - Cadastro</title>
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/login.css">
-    <link rel="stylesheet" href="../CSS/cadastro.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap" rel="stylesheet">
-</head> 
-<body>
-	<script src="../JAVASCRIPT/header.js"></script>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="../CSS/cadastro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Martel:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="../JAVASCRIPT/header.js"></script>
     <main>
-        <section class="container__historia">
-            <div class="menu__container__historia">
-                <div class="menu__container__mensagem">
-                    <img class="imagem__mensagem" src="../IMG/forno-a-lenha.png" alt="Logo-pizza">
-                    <img class="imagem__mensagem" src="../IMG/usuario-mensagem.png" alt="Logo-pizza">
-                </div>
-                <div class="container__texto">
-                    <h4 class="login__texto">É novo aqui? Cadastre-se!</h4>
-                    <form id="form-cadastro" >
-                        <div class="login__dados">
-                            <p class="container__login"><input id="nome" name="nome" type="nome" class="login_placeholder" placeholder="Nome"></p>
-                            <p class="container__login"><input id="sobrenome" name="sobrenome" type="sobrenome" class="login_placeholder" placeholder="Sobrenome"></p>
-                        </div>
-                        <div class="login__dados">
-                            <p class="container__login"><input id="email" name="email" type="email" class="login_placeholder" placeholder="Email"></p>
-                        </div>
-                        <div class="login__dados">
-                            <p class="container__login"><input id="cpf" name="cpf" type="cpf" class="login_placeholder" placeholder="CPF: XXX.XXX.XXX-XX"></p>
-                        </div>
-                        <div class="login__dados">
-                            <p class="container__login"><input id="celular" name="celular" type="celular" class="login_placeholder" placeholder="Celular: (XX) XXXXX XXXX"></p>
-                        </div>
-                        <div class="login__dados">
-                            <p class="container__login"><input id="senha" name="senha" type="senha" class="login_placeholder" placeholder="senha"></p>
-                        </div>
-                        <div class="login__dados">
-                            <p class="container__login"><input id="confirmacao" name="confirmacao" type="confirmacao" class="login_placeholder" placeholder="confirme sua senha"></p>
-                        </div>
-                        <button id="botaoCadastro" class="botaoCentralizado">Acessar Conta</button>
-                    </form>
-                    <ul id="mensagens-erro"></ul>
-                    <div class="login__interacao">
-                        <a href="../HTML/login.html" class="lista__login__link">Login</a>
-                    </div>
-                </div>
+      <section class="container__historia">
+        <div class="menu__container__historia">
+          <div class="menu__container__mensagem">
+            <img
+              class="imagem__mensagem"
+              src="../IMG/forno-a-lenha - titulo.png"
+              alt="Logo-pizza"
+            />
+            <img
+              class="imagem__mensagem"
+              src="../IMG/usuario-mensagem.png"
+              alt="Logo-pizza"
+            />
+          </div>
+          <div class="container__texto">
+            <h4 class="login__texto">É novo aqui? Cadastre-se!</h4>
+            <form id="form-cadastro">
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="nome"
+                    class="login_placeholder"
+                    placeholder="Nome"
+                  />
+                </p>
+                <p class="container__login">
+                  <input
+                    id="sobrenome"
+                    name="sobrenome"
+                    type="sobrenome"
+                    class="login_placeholder"
+                    placeholder="Sobrenome"
+                  />
+                </p>
+              </div>
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="login_placeholder"
+                    placeholder="Email"
+                  />
+                </p>
+              </div>
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="cpf"
+                    name="cpf"
+                    type="cpf"
+                    class="login_placeholder"
+                    placeholder="CPF: XXX.XXX.XXX-XX"
+                  />
+                </p>
+              </div>
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="celular"
+                    name="celular"
+                    type="celular"
+                    class="login_placeholder"
+                    placeholder="Celular: (XX) XXXXX XXXX"
+                  />
+                </p>
+              </div>
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="senha"
+                    name="senha"
+                    type="senha"
+                    class="login_placeholder"
+                    placeholder="senha"
+                  />
+                </p>
+              </div>
+              <div class="login__dados">
+                <p class="container__login">
+                  <input
+                    id="confirmacao"
+                    name="confirmacao"
+                    type="confirmacao"
+                    class="login_placeholder"
+                    placeholder="confirme sua senha"
+                  />
+                </p>
+              </div>
+              <button id="botaoCadastro" class="botaoCentralizado">
+                Acessar Conta
+              </button>
+            </form>
+            <ul id="mensagens-erro"></ul>
+            <div class="login__interacao">
+              <a href="../HTML/login.html" class="lista__login__link">Login</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-	<script src="../JAVASCRIPT/cadastro.js"></script>
-	<script src="../JAVASCRIPT/footer.js"></script>
-</body>
+    <script src="../JAVASCRIPT/cadastro.js"></script>
+    <script src="../JAVASCRIPT/footer.js"></script>
+  </body>
 </html>

@@ -59,7 +59,8 @@ body {
   font-family: "inter";
   font-weight: 700;
   font-size: 18px;
-  text-decoration: none;
+  text-decoration: done;
+  padding: 0.75rem 1.5rem;
 }
 
 .lista__menu__link:hover {
@@ -95,7 +96,7 @@ body {
   color: black;
   font-family: "inter";
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: done;
 }
 .lista__menu__login:hover {
   color: #d31608;
@@ -180,7 +181,7 @@ body {
 }
 
 .logo__carrinho {
-  width: 30px;
+  width: 130px;
 }
 
 .img__pedido {
@@ -216,6 +217,7 @@ body {
   text-transform: uppercase;
   position: relative;
   top: 65px;
+  align-items: center;
 }
 
 @media screen and (max-width: 760px) {
@@ -229,7 +231,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 0;
+
+  padding: 0.75rem 1.5rem;
 }
 
 @media screen and (max-width: 760px) {
@@ -506,6 +509,45 @@ dialog {
 .logo__imagem__cardapio {
   width: 50px;
   border-radius: 5px;
+}
+
+.photo {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 8%;
+  cursor: pointer;
+}
+
+element.style {
+  cursor: pointer;
+}
+
+.photo_2 {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 9%;
+}
+
+.photo_3 {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 10%;
+}
+
+.photo_4 {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 8%;
+}
+
+.img__pedido {
+  width: 15%;
+  height: 90px;
+}
+
+.cabecalho__logo__pizzadivina {
+  width: 25%;
+  height: 260%;
 }
 
 .item__carrinho {
